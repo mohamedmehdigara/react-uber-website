@@ -1,38 +1,355 @@
-.App {
+/* Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.header__links a {
+  margin-right: 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.header__links a:hover {
+  color: #000;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__language a {
+  margin-right: 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header__auth a {
+  margin-right: 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header__auth a:last-child {
+  margin-right: 0;
+}
+
+.header__auth a:hover {
+  color: #000;
+}
+
+/* App.css */
+/* Main.css */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+/* Section styles */
+.main__earn,
+.main__business,
+.main__safety,
+.main__cities,
+.main__about,
+.main__newsroom,
+.main__global-citizenship,
+.main__apps {
+  margin-bottom: 40px;
+}
+
+.main h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.main h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.main h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.main h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.main p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.main a {
+  color: #007bff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.main a:hover {
+  text-decoration: underline;
+}
+
+.main__earn {
+  background-color: #f2f2f2;
+  padding: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main__earn h1,
+.main__earn h2,
+.main__earn h3,
+.main__earn h4 {
+  color: #000;
+  margin-bottom: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main__earn p {
+  color: #333;
+  margin-bottom: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main__earn a {
+  color: #007bff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.main__earn form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.main__earn input[type='text'] {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main__earn button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
+
+.main__earn button:hover {
+  background-color: #0056b3;
+}
+
+.main__business {
+  background-color: #007bff;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+
+.main__business p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.main__business a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.main__safety {
+  padding: 30px;
+  text-align: center;
+}
+
+.main__safety h1 {
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.main__safety p {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.main__safety a {
+  color: #007bff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.main__cities {
+  background-color: #f2f2f2;
+  padding: 30px;
+  text-align: center;
+}
+
+.main__cities h1 {
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.main__cities p {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.main__cities a {
+  color: #007bff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.main__about,
+.main__newsroom,
+.main__global-citizenship {
+  padding: 30px;
+  text-align: center;
+}
+
+.main__about h1,
+.main__newsroom h1,
+.main__global-citizenship h1 {
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.main__about p,
+.main__newsroom p,
+.main__global-citizenship p {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.main__about a,
+.main__newsroom a,
+.main__global-citizenship a {
+  color: #007bff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.main__apps {
+  padding: 30px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.main__apps h1 {
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.main__apps a {
+  color: #007bff;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+/* Add these styles to the existing App.css file */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__left {
+  flex: 1;
+}
+
+.footer__left .footer__logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer__left a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer__left p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer__middle {
+  display: flex;
+}
+
+.footer__section {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.footer__section h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer__section a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer__right {
+  flex: 1;
+  text-align: right;
+}
+
+.footer__right p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer__app-links a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer__right a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+}
+
